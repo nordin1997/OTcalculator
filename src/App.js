@@ -1,6 +1,6 @@
 import React from "react";
 function App() {
-  const [state, updateState] = React.useState(null);
+  const [state, updateState] = React.useState({});
 
   return (
     <div className="App">
