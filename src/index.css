@@ -4,6 +4,7 @@ body {
   font-family: Rubik, JetBrains Mono, Poppins;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.1rem;
 }
 
 .App {
@@ -23,7 +24,7 @@ body {
 table {
   font-family: Rubik, JetBrains Mono, Poppins;
   border-collapse: collapse;
-  width: 70%;
+  width: 80%;
 }
 
 td, th {
@@ -34,4 +35,66 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.indicator{
+  display: flex;
+  flex-flow: row wrap;
+}
+.hrp,.orp{
+  font-size: 1.8rem;
+  margin-left: 20px;
+}
+
+input{
+  font-family: Poppins;
+  font-weight: 900;
+  width: 100px;
+  background-color: lightgrey; border: none; border-radius: 5px; color: #333; /* Dark grey */ padding: 15px 32px
+}
+
+
+@media only screen and (max-width: 500px) {
+ .App{
+  font-size: 0.85rem;
+ }
+ .title{
+  font-size: 1.2rem;
+  word-wrap: break-word;
+  text-align: center;
+ }
+ label{
+  font-size: 0.80rem;
+ }
+ .indicator{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.hrp{
+  margin-top: -10px;
+}
+table{
+  width: 90%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 2px;
+  font-size: 0.7rem;
+}
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
