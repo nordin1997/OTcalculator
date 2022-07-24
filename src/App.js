@@ -3,36 +3,37 @@ import React from "react";
 function App() {
   const [state, updateState] = React.useState(0);
   const [amount, updateAmount] = React.useState({
-    normal: "",
-    rd: "",
-    ph: "",
+    normal: 0,
+    rd: 0,
+    ph: 0,
   });
   const [total,updateTotal] = React.useState(0)
- 
+  
   React.useEffect(()=>{
-    updateTotal(Array.from(document.getElementsByClassName("final"))
+      updateTotal(Array.from(document.getElementsByClassName("final"))
     .map((i) => Number(i.innerHTML))
     .reduce(
       (previousValue, currentValue) => previousValue + currentValue
     ))
-
-  },[amount])
+   
+  },[amount,state])
 
   return (
     <div className="App">
       <h1 className="title"> 🇲🇾 OVERTIME CALCULATOR  </h1>
       <label>
-        Basic Salary + &#40;  Allowance if included in OT calculation &#41;
+        Enter Your Basic Salary + &#40;  Allowance if included in OT calculation &#41;
       </label>
       <input
         type="number"
         name="basic"
         placeholder="1500"
         min={0}
+        className = 'basic'
         onChange={(e) => {
           updateState({
-            orp: e.target.value/26,
-            hrp: e.target.value/26/8,
+            orp: e.target.value ? e.target.value /26:0,
+            hrp: e.target.value ? e.target.value /26/8:0,
           });
         }}
       ></input>

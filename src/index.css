@@ -5,6 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem;
+  background-color: #fff;
+  color: BLACK
 }
 
 .App {
@@ -97,4 +99,8 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.basic{
+  font-size: 24px;
 }
