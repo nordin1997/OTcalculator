@@ -27,7 +27,6 @@ function App() {
       <label>
         Enter Your Basic Salary
       </label>
-      <p>&#40; Include Any Fixed Allowance in Your Basic If it's subject to OT Calculation &#41;</p>
       <input
         type="number"
         name="basic"
@@ -41,6 +40,7 @@ function App() {
           });
         }}
       ></input>
+            <p>&#40; Include Any Fixed Allowance in Your Basic If it's subject to OT Calculation &#41;</p>
       {/*Below are ORP & HRP*/}
       {/* <div className="indicator">
         <p className="orp">
@@ -106,7 +106,7 @@ function App() {
           </td>
         </tr>
         {showM && <tr>
-          <td>Rest Day Below 4</td>
+          <td>Rest Day Below 4h</td>
           <td><p className="rd">
               RM
               <span className="rd-a">
@@ -135,7 +135,7 @@ function App() {
           
           </tr>}
           {showM && <tr>
-          <td>Rest Day Above 4 and Below 8</td>
+          <td>Rest Day Above 4 and Below 8h</td>
           <td><p className="rd">
               RM
               <span className="rd-a">
@@ -195,7 +195,7 @@ function App() {
           </td>
         </tr>
         {showM && <tr>
-          <td>Public Holiday Below 8</td>
+          <td>Public Holiday Below 8h</td>
           <td><p className="ph">
               RM
               <span className="ph-a">
