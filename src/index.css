@@ -6,7 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.1rem;
   background-color: #fff;
-  color: BLACK
+  color: BLACK;
+  padding: 25px 10px;
 }
 
 .App {
@@ -103,4 +104,20 @@ input[type=number] {
 
 .basic{
   font-size: 24px;
+}
+
+input[type=checkbox]{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.show-min{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=number]{
+  font-size: 1.2rem;
 }
